@@ -12,7 +12,7 @@ export class TaskCardComponent {
     
   
     openEditTaskModal(){
-      this._modalControllerService.openEditTaskModal();
+      this._modalControllerService.openEditTaskModal({name: 'Nome Tarefa', desription: 'Descrição Tarefa' });
     }
 
     openModalComment(){
