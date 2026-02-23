@@ -18,7 +18,7 @@ export class TaskFormModalComponent {
   taskForm : FormGroup =  new FormGroup({
     name: new FormControl(this._data.formValues.name, [Validators.required, Validators.minLength(10)]),
 
-    description: new FormControl(this._data.formValues.desription, [Validators.required, Validators.minLength(10)])
+    description: new FormControl(this._data.formValues.description, [Validators.required, Validators.minLength(10)])
   })
 
   onFormSubmit() {

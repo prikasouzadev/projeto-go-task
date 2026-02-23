@@ -1,4 +1,4 @@
 export interface ITaskFormControls{
     name : string,
-    desription: string;
+    description: string;
 }

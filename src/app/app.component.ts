@@ -9,11 +9,8 @@ import { ModalControllerService } from './services/modal-controller.service';
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet,
     HeaderComponent,
     MainContentComponent,
-    TaskFormModalComponent,
-    TaskCommentsModalComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
