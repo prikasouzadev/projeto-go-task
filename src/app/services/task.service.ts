@@ -17,13 +17,13 @@ export class TaskService {
 
   // Tarefas em Fazendo
   private doingTasks$ = new BehaviorSubject<ITask[]>([]);
-  readonly doingTasks = this.todoTasks$.asObservable().pipe(
+  readonly doingTasks = this.doingTasks$.asObservable().pipe(
     map((tasks)=> structuredClone(tasks)),
   );
 
   // Tarefas em Concluído
   private doneTasks$ = new BehaviorSubject<ITask[]>([]);
-  readonly doneTasks = this.todoTasks$.asObservable().pipe(
+  readonly doneTasks = this.doneTasks$.asObservable().pipe(
     map((tasks)=> structuredClone(tasks)),
   );;
 
